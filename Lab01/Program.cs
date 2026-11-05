@@ -90,10 +90,17 @@
 
 
 //Самостоятельная работа
-//Задание 1
-int scholarship = 7500;
-int monthlyExpenses = 4500;
-const int MonthsInSemester = 4;
+// //Задание 1
+// int scholarship = 7500;
+// int monthlyExpenses = 4500;
+// const int MonthsInSemester = 4;
 
-Console.WriteLine($"Денег осталось к концу месяца: {scholarship - monthlyExpenses}");
-Console.WriteLine($"За семестр месяца останется: {(scholarship - monthlyExpenses) * MonthsInSemester}.");
+// Console.WriteLine($"Денег осталось к концу месяца: {scholarship - monthlyExpenses}");
+// Console.WriteLine($"За семестр месяца останется: {(scholarship - monthlyExpenses) * MonthsInSemester}.");
+
+//Задание 3
+int totalMinute = 500;
+int minutePerLesson = 45;
+int FullSession = totalMinute / minutePerLesson;
+int ExSession = totalMinute % minutePerLesson;
+Console.WriteLine($"{totalMinute} минут = {FullSession} полных занятий + {ExSession} минут.");
