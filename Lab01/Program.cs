@@ -54,36 +54,46 @@
 // Console.WriteLine($"25 / 4 как double: {studentsPerGroupCorrect}");
 
 
-Console.WriteLine();
-Console.WriteLine("Способы собрать строку");
+// Console.WriteLine();
+// Console.WriteLine("Способы собрать строку");
 
-string firstName = "Саша";
-string lastName = "Коновалов";
+// string firstName = "Саша";
+// string lastName = "Коновалов";
 
-// Способ 1: конкатенация через оператор +
-string fullNameConcat = firstName + " " + lastName;
+// // Способ 1: конкатенация через оператор +
+// string fullNameConcat = firstName + " " + lastName;
 
-// Способ 2: интерполяция через $""
-string fullNameInterp = $"{firstName} {lastName}";
+// // Способ 2: интерполяция через $""
+// string fullNameInterp = $"{firstName} {lastName}";
 
-// Способ 3: метод string.Concat
-string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
+// // Способ 3: метод string.Concat
+// string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
 
-Console.WriteLine(fullNameConcat);
-Console.WriteLine(fullNameInterp);
-Console.WriteLine(fullNameConcatMethod);
-Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
+// Console.WriteLine(fullNameConcat);
+// Console.WriteLine(fullNameInterp);
+// Console.WriteLine(fullNameConcatMethod);
+// Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
 
-// Блок 6: константы. const нельзя изменить после объявления,
-// поэтому в них хранят неизменные значения
-Console.WriteLine();
-Console.WriteLine("Константы");
+// // Блок 6: константы. const нельзя изменить после объявления,
+// // поэтому в них хранят неизменные значения
+// Console.WriteLine();
+// Console.WriteLine("Константы");
 
-const double VatRate = 0.20;
-const string CollegeName = "ВФ ВолГУ";
+// const double VatRate = 0.20;
+// const string CollegeName = "ВФ ВолГУ";
 
-double productPrice = 1000;
-double priceWithVat = productPrice * (1 + VatRate);
+// double productPrice = 1000;
+// double priceWithVat = productPrice * (1 + VatRate);
 
-Console.WriteLine($"Учебное заведение: {CollegeName}");
-Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
+// Console.WriteLine($"Учебное заведение: {CollegeName}");
+// Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
+
+
+//Самостоятельная работа
+//Задание 1
+int scholarship = 7500;
+int monthlyExpenses = 4500;
+const int MonthsInSemester = 4;
+
+Console.WriteLine($"Денег осталось к концу месяца: {scholarship - monthlyExpenses}");
+Console.WriteLine($"За семестр месяца останется: {(scholarship - monthlyExpenses) * MonthsInSemester}.");
